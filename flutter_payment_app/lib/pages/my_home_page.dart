@@ -207,7 +207,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w900,
-                              color: AppColor.mainColor
+                              color: AppColor.idColor
                           ),
                         ),
                       ],
