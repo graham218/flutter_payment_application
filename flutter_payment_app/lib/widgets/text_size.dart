@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_payment_app/component/colors.dart';
 
 class SizedText extends StatelessWidget {
@@ -26,9 +27,13 @@ class SizedText extends StatelessWidget {
          Row(
            children: [
              for(int i=0; i<textSize.width/5; i++)
-               Container(
+               i.isEven?Container(
                  width: 5,
                  color: color,
+                 height: 2,
+               ):Container(
+                 width: 5,
+                 color: Colors.white,
                  height: 2,
                )
            ],
