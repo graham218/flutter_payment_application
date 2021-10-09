@@ -99,9 +99,23 @@ class _MyHomePageState extends State<MyHomePage> {
     return Positioned(
       top: 320,
         child: Container(
-          color: Colors.red,
           height: 130,
           width: MediaQuery.of(context).size.width-20,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(30),
+              bottomRight: Radius.circular(30)
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Color(0xFFd8dbe0),
+                offset: Offset(1, 1),
+                blurRadius: 20.0,
+                spreadRadius: 10
+              )
+            ]
+          ),
         ));
   }
 }
