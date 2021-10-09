@@ -165,9 +165,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             )
                           ],
                         ),
-                        SizedText(text: "Auto pay on 24th May 18", color: AppColor.green),
                       ],
-                    )
+                    ),
+                    SizedText(text: "Auto pay on 24th May 18", color: AppColor.green),
                   ],
                 )
               ],
