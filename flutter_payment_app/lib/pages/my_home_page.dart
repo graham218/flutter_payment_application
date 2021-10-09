@@ -22,6 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Stack(
           children: [
             _headSection(),
+            _listBills(),
           ],
         ),
       ),
@@ -93,5 +94,14 @@ class _MyHomePageState extends State<MyHomePage> {
         ]
       ),
     ));
+  }
+  _listBills(){
+    return Positioned(
+      top: 320,
+        child: Container(
+          color: Colors.red,
+          height: 130,
+          width: MediaQuery.of(context).size.width-20,
+        ));
   }
 }
