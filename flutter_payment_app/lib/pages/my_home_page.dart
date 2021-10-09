@@ -72,7 +72,12 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
   _buttonContainer(){
-    return Positioned(child: Container(
+    return Positioned(
+      right: 58,
+        bottom: 0,
+        child: Container(
+          height: 60,
+      width: 60,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
