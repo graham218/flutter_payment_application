@@ -24,6 +24,7 @@ class SizedText extends StatelessWidget {
            softWrap: false,
            overflow: TextOverflow.clip,
          ),
+         SizedBox(height: 5,),
          Row(
            children: [
              for(int i=0; i<textSize.width/5; i++)
