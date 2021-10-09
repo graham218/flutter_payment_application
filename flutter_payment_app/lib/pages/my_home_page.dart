@@ -195,10 +195,19 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         Text(
-                          "Select",
+                          "Ksh 1248.00",
                           style: TextStyle(
-                              fontSize: 16,
-                              color: AppColor.selectColor
+                              fontSize: 18,
+                              fontWeight: FontWeight.w900,
+                              color: AppColor.mainColor
+                          ),
+                        ),
+                        Text(
+                          "Due in 3 days",
+                          style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w900,
+                              color: AppColor.mainColor
                           ),
                         ),
                       ],
