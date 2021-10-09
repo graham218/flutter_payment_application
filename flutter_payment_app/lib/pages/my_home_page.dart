@@ -120,6 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Container(
             margin: const EdgeInsets.only(top: 10, left: 18),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -192,7 +193,14 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
-                        )
+                        ),
+                        Text(
+                          "Select",
+                          style: TextStyle(
+                              fontSize: 16,
+                              color: AppColor.selectColor
+                          ),
+                        ),
                       ],
                     )
                   ],
