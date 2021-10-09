@@ -29,7 +29,6 @@ class _MyHomePageState extends State<MyHomePage> {
   _headSection(){
     return Container(
       height: 310,
-      color: Colors.red,
       child: Stack(
         children: [
           _mainBackground(),
