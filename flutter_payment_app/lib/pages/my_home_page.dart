@@ -22,7 +22,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Stack(
           children: [
             _headSection(),
-            _curveImageContainer(),
           ],
         ),
       ),
@@ -34,6 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Stack(
         children: [
           _mainBackground(),
+          _curveImageContainer(),
+          _buttonContainer(),
         ],
       ),
     );
@@ -69,5 +70,23 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
     )
     );
+  }
+  _buttonContainer(){
+    return Positioned(child: Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(
+            "images/lines.png"
+          )
+        ),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 15,
+            offset: Offset(0, 1),
+            color: Color(0xFF11324d).withOpacity(0.2)
+          )
+        ]
+      ),
+    ));
   }
 }
