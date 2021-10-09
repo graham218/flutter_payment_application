@@ -17,11 +17,23 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: AppColor.backGroundColor,
       body: Container(
+        height: h,
         child: Stack(
           children: [
-
+            _headSection(),
           ],
         ),
+      ),
+    );
+  }
+  _headSection(){
+    return Container(
+      height: 310,
+      color: Colors.red,
+      child: Stack(
+        children: [
+
+        ],
       ),
     );
   }
