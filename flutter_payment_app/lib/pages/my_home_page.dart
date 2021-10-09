@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_payment_app/component/colors.dart';
+import 'package:flutter_payment_app/widgets/text_size.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -163,7 +164,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             )
                           ],
-                        )
+                        ),
+                        SizedText(text: "Auto pay on 24th May 18", color: AppColor.green),
                       ],
                     )
                   ],
