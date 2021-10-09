@@ -171,6 +171,31 @@ class _MyHomePageState extends State<MyHomePage> {
                     SizedText(text: "Auto pay on 24th May 18", color: AppColor.green),
                     SizedBox(height: 5,)
                   ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          width: 80,
+                          height: 30,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30),
+                            color: AppColor.selectBackground,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Select",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: AppColor.selectColor
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
                 )
               ],
             ),
