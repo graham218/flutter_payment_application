@@ -18,6 +18,9 @@ class SizedText extends StatelessWidget {
                color: color,
                fontWeight: FontWeight.w700
            ),
+           maxLines: 1,
+           softWrap: false,
+           overflow: TextOverflow.clip,
          )
        ],
       ),
