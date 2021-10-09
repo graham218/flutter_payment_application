@@ -122,6 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
                       children: [
@@ -168,6 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     SizedText(text: "Auto pay on 24th May 18", color: AppColor.green),
+                    SizedBox(height: 5,)
                   ],
                 )
               ],
