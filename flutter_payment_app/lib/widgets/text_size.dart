@@ -15,7 +15,7 @@ class SizedText extends StatelessWidget {
            text,
            style: TextStyle(
                fontSize: 16,
-               color: AppColor.mainColor,
+               color: color,
                fontWeight: FontWeight.w700
            ),
          )
