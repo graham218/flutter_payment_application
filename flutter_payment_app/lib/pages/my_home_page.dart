@@ -54,6 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
   _curveImageContainer(){
     return Positioned(
+      left: 0,
+        right: -2,
+        bottom: 0,
         child: Container(
           height: MediaQuery.of(context).size.height*0.1,
           decoration: BoxDecoration(
