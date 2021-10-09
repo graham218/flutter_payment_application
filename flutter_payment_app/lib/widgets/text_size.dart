@@ -1,10 +1,26 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_payment_app/component/colors.dart';
 
 class SizedText extends StatelessWidget {
-  const SizedText({Key? key}) : super(key: key);
+  final String text;
+  final Color color;
+  const SizedText({Key? key, required this.text, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+       children: [
+         Text(
+           text,
+           style: TextStyle(
+               fontSize: 16,
+               color: AppColor.mainColor,
+               fontWeight: FontWeight.w700
+           ),
+         )
+       ],
+      ),
+    );
   }
 }
