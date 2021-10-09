@@ -32,8 +32,21 @@ class _MyHomePageState extends State<MyHomePage> {
       color: Colors.red,
       child: Stack(
         children: [
-
+          _mainBackground(),
         ],
+      ),
+    );
+  }
+  _mainBackground(){
+    return Positioned(
+      child: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              "images/background.png"
+            ),
+          ),
+        ),
       ),
     );
   }
