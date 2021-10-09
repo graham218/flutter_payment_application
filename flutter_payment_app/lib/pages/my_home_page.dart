@@ -143,6 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         SizedBox(width: 10,),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "KenGen Power",
@@ -150,6 +151,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                 fontSize: 16,
                                 color: AppColor.mainColor,
                                 fontWeight: FontWeight.w700
+                              ),
+                            ),
+                            SizedBox(height: 10,),
+                            Text(
+                              "ID: 2746453473",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  color: AppColor.idColor,
+                                  fontWeight: FontWeight.w700
                               ),
                             )
                           ],
